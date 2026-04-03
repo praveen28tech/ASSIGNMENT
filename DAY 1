@@ -1,0 +1,27 @@
+DAY 1 
+
+ ASSIGNMENT - 1
+
+Java programs are compiled into bytecode and run on the JVM, allowing them to work on any operating system.
+Object-Oriented Uses OOP concepts like encapsulation, inheritance, and polymorphism, making programs modular and reusable.
+Java provides strong security with features like bytecode verification and no direct memory access.
+It has automatic memory management (garbage collection) and strong exception handling, reducing errors.
+Java supports multithreading, enabling multiple tasks to run simultaneously for better performance.
+
+
+ASSIGNMENT - 2
+
+package assignments;
+
+public class Day1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		System.out.print("i am ");
+		System.out.print("Good");
+		
+
+	}
+
+}
