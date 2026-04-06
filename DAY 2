@@ -1,0 +1,36 @@
+// 1. Join 2 Strings, store it in a variable and then display the result
+
+package assignments;
+
+public class Strings {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String Str1 ="Praveen";
+		String Str2 =" Venkatesh";
+		
+		String Result = Str1+Str2;
+		
+		System.out.println(Result);
+	}
+
+}
+
+// 2.Access 2 static variables and perform multiplication operation
+
+package assignments;
+
+public class Stringmultiplication {
+	
+	static int a =10;
+	static int b=20;
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		  int result = a * b;
+		  System.out.println("Multiplication "+result);
+	}
+
+}
