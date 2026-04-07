@@ -1,0 +1,47 @@
+// Get 2 double values from user and store it in variables. Print the added values in result.
+
+package assignments;
+
+import java.util.Scanner;
+
+public class Twodouble {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		Scanner src = new Scanner(System.in);
+		System.out.print(" Enter the 1st value : ");
+		double a = src.nextDouble();
+		System.out.print(" Enter the 2st value : ");
+		double b = src.nextDouble();
+		
+		double result = a+b;
+		System.out.println("Added two double is value : "+result);
+		src.close();
+
+	}
+
+}
+
+
+// 2.Get boolean value as input from user and print the same in console.
+
+package assignments;
+
+import java.util.Scanner;
+
+public class BooleanValue {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc= new Scanner(System.in);
+		System.out.print("Enter the boolean value(true/false) : ");
+		boolean value=sc.nextBoolean();
+		System.out.println("Boolean value is : " +value);
+		sc.close();
+		
+	}
+
+}
