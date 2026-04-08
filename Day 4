@@ -1,0 +1,23 @@
+
+//Write a program using Ternary Operator to print if given value is even or not
+
+package assignments;
+
+import java.util.Scanner;
+
+public class Ternaryoperator {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc=new Scanner(System.in);
+		System.out.print("ENTER THE VALUE : ");
+		int num =sc.nextInt();
+		
+		String result=(num%2==0)?"Even":"Odd";
+		
+		System.out.println(num +" is the : "+ result);
+		
+	}
+
+}
