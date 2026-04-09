@@ -1,0 +1,42 @@
+//1.Write a program to find whether the given number is even or odd.
+// For eg: User inputs 8, the output should be "The number 8 is even"
+package assignments;
+
+import java.util.Scanner;
+
+public class ConState {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner scan=new Scanner(System.in);
+		
+		System.out.print("Enter the Number : ");
+		int a =scan.nextInt();
+		
+		if(a%2==0) {
+			System.out.println("The number "+a+" is Even");
+		}else {
+			System.out.println("The number "+a+" is odd");
+		}
+		
+
+	}
+
+}
+//2. Write a program using For Loop to print from 101 to 110
+
+package assignments;
+
+public class LoopStat {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		for (int i=101;i<=110;i++) {
+			System.out.println(i);
+		}
+	}
+
+}
