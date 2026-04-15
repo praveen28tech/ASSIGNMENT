@@ -1,0 +1,49 @@
+// 1.Create a class Employee and define methods for Employee like getSalary() and getTodayTask().
+// 2.It should have properties (Attributes) Employee ID, Department, Role.
+// 3.Select appropriate datatype for properties (EmployeeID, Department,Role)
+// 4. Display the output
+
+
+package assignments;
+  
+class Employee {
+	
+    int employeeID;
+    int salary;
+    String department;
+    String role;
+
+    
+    public void getSalary() {
+        System.out.println("Salary       : " + salary);
+    }
+
+    public void getTodayTask() {
+        System.out.println("Today's task : Complete assigned work.");
+    }
+
+    public void EmployeeDetails() {
+        System.out.println("Employee ID  : " + employeeID);
+        System.out.println("Department   : " + department);
+        System.out.println("Role         : " + role);
+    }
+}
+
+public class OOPSconcept {
+
+    public static void main(String[] args) {
+
+        Employee emp = new Employee();
+
+ 
+        emp.employeeID = 101;
+        emp.department = "IT";
+        emp.role = "Developer";
+        emp.salary = 50000;
+
+
+        emp.EmployeeDetails();
+        emp.getSalary();
+        emp.getTodayTask();
+    }
+}
