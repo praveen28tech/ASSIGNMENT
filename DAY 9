@@ -1,0 +1,65 @@
+// Create a List of 5 float values and using a for loop check for condition and print only the 2nd element
+
+package assignments;
+
+import java.util.ArrayList;
+import java.util.List;
+
+
+
+public class Loopcheck {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		List<Float> fl = new ArrayList<>();
+		fl.add(10.5f);
+		fl.add(18.6f);
+		fl.add(17.5f);
+		fl.add(40.8f);
+		
+		int stop=1;
+		
+		for(int i=0;i<fl.size();i++) {
+			if( i == stop){
+				System.out.println(fl.get(i));
+			}
+		}
+		
+
+	}
+
+}
+
+// Create a Set of characters with duplicate values. Print all the values but without duplicates in sorting order.
+
+package assignments;
+
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
+public class DataStru {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Set<Object> obj= new HashSet<>();
+		
+		obj.add('a');
+		obj.add('c');
+		obj.add('b');
+		obj.add('b');
+		obj.add('d');
+		
+		
+		Iterator<Object> sp=obj.iterator();
+		
+		
+		
+		while(sp.hasNext()) {
+			System.out.println(sp.next());
+		
+		  }
+		}
+	}
