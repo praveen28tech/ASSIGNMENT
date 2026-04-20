@@ -1,0 +1,98 @@
+Q.No-1:  Create Animal Class and also Create Cat Class, Cat should inherit Animal. Animal should have methods like walk(),sound(). By means of inheritance access the Animal methods from Cat class.
+
+package assignments;
+
+
+class animal{
+	
+	void  walk() {
+		System.out.println(" Animal is walinkg");
+		
+	}
+	
+	void  sound() {
+		System.out.println(" This a Animal sound");
+		
+	}
+}
+
+
+public class cat extends animal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		cat ani= new cat();
+		
+		ani.walk();
+		ani.sound();
+
+	}
+
+}
+
+
+
+Q.No-2: Explain about Method Overloading and Method Overriding concept with example program
+
+
+
+package assignments;
+ 
+// Method overloading occurs when multiple methods in the same class have the same name but different parameters (type, number, or order).
+
+
+class  calu {
+	 
+	 void add(int a, int b){
+		 System.out.println(" Adding 2 Number A and B is  : "+(a+b));
+		 }
+	 void multiply(int a, int b ,int c){
+		 System.out.println(" Multiply  3 Number of a*b*c : "+(a*b*c));
+	 }
+	 void joiningwords(String name1,String name2) {
+		 System.out.println(" Joining 2 words  is         : "+(name1+name2));
+	 }
+ }
+public class Overloading {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		calu over=new calu();
+		over.add(10, 20);
+		over.multiply(2, 4, 3);
+		over.joiningwords("PRAVEEN ", "V");
+		
+	}
+
+}
+
+..........................................................
+
+package assignments;
+
+// Method overriding occurs when a subclass provides a specific implementation of a method that is already defined in its parent class.
+
+class Animal {
+
+    void sound() {
+        System.out.println("Animal makes a sound");
+    }
+}
+
+class Dog extends Animal {
+
+    @Override
+    void sound() {
+        System.out.println("Dog barks");
+    }
+}
+
+public class Overriding{
+    public static void main(String[] args) {
+        Animal obj = new Dog();  
+        obj.sound();          
+    }
+
+  }
